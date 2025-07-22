@@ -23,12 +23,17 @@ class Player(pygame.sprite.Sprite):
         self.image.fill(YELLOW)
         self.rect = self.image.get_rect()
         self.rect.center = ( int(WIDTH/2), int(HEIGHT/2) )
+        self.speed = 0
 
     def update(self):
-        self.rect.y += 3
-        if self.rect.bottom > HEIGHT:
+        self.speed += 0.1
+        self.rect.y += self.speed
+        if self.rect.bottom > HEIGHT or self.rect.top < 0:
             global running
             running = False
+
+    def flap(self):
+        self.speed -= 5
 
 pygame.init()
 pygame.mixer.init()
@@ -47,6 +52,9 @@ while running:
     clock.tick(FPS)
     #process input
     for event in pygame.event.get():
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_SPACE:
+                player.flap()
         # check for closing window
         if event.type == pygame.QUIT:
             running = False

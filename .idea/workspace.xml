@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4ed4cab-d83a-4055-819e-7abbf943b436" name="Changes" comment="skelleton">
-      <change afterPath="$PROJECT_DIR$/template.txt" afterDir="false" />
+    <list default="true" id="f4ed4cab-d83a-4055-819e-7abbf943b436" name="Changes" comment="game over on collision">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -67,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753180525632</updated>
-      <workItem from="1753180526651" duration="8100000" />
+      <workItem from="1753180526651" duration="8834000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -85,7 +84,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753184057891</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="game over on collision">
+      <option name="closed" value="true" />
+      <created>1753194566592</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1753194566592</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +112,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="skelleton" />
-    <option name="LAST_COMMIT_MESSAGE" value="skelleton" />
+    <MESSAGE value="game over on collision" />
+    <option name="LAST_COMMIT_MESSAGE" value="game over on collision" />
   </component>
 </project>
