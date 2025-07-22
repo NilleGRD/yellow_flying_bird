@@ -1,16 +1,42 @@
-# This is a sample Python script.
+import pygame
+#import random
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+WIDTH =800
+HEIGHT =600
+FPS = 60
+
+#define colors
+WHITE = (255,255,255)
+BLACK = (0,0,0)
+RED = (255,0,0)
+GREEN = (0,255,0)
+BLUE = (0,0,255)
+YELLOW = (255,255,0)
+SKY_BLUE = (135,206,235)
+
+pygame.init()
+pygame.mixer.init()
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("flappy fågel")
+clock = pygame.time.Clock()
+
+running = True
+while running:
+    # keep loop running at right fps
+    clock.tick(FPS)
+
+    #process input
+    for event in pygame.event.get():
+        # check for closing window
+        if event.type == pygame.QUIT:
+            running = False
+    # update
+
+    #draw
+    screen.fill(SKY_BLUE)
+    #after drawing everything, flip the display
+    pygame.display.flip()
+
+pygame.quit()
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
